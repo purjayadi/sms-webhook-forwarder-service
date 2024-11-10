@@ -19,6 +19,6 @@ sed -i "s|\$HOME|$HOME|g" ~/.config/gammu-smsd/gammurc
 echo "WEBHOOK_URL=$2" >> ~/.config/gammu-smsd/environment
 
 mkdir -p ~/.config/systemd/user/
-cp ./gammu-smsd.service ~/.config/systemd/user/gammu-smsd.service
+cp ./gammu-smsd-webhook.service ~/.config/systemd/user/gammu-smsd-webhook.service
 
-echo "Enable service by: systemctl --user enable --now gammu-smsd.service"
+echo "Enable service by: systemctl --user enable --now gammu-smsd-webhook.service"
